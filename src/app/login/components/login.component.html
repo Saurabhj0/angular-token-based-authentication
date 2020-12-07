@@ -1,0 +1,16 @@
+<fieldset>
+    <legend>
+        LOGIN
+    </legend>
+    <input type="text" 
+           [(ngModel)]="uname"
+           placeholder="Enter username">
+    <br><br>
+    <input type="text"
+           [(ngModel)]="upwd"
+           placeholder="Enter your password">
+
+           <br><br>
+
+    <button (click)="login({'uname':uname,'upwd':upwd })"> LOGIN </button>
+</fieldset>
